@@ -1,10 +1,10 @@
 # Launch status and remaining inputs
 
-The owner approved the logo and release on November 12, 2026, and chose to upload the deployment ZIP using cPanel File Manager. Upload and production verification are still pending.
+The owner approved the logo and release on November 12, 2026, and authorized the assistant to perform the upload, domain connection and hosting configuration. Authenticated WHC access, deployment and production verification are still pending.
 
 ## Needed to finish publication
 
-- **cPanel upload:** the owner will upload the deployment ZIP to the document root shown in cPanel → Domains → screeners.ca. Follow `docs/CPANEL_UPLOAD.md`. The last domain check returned WHC's registrar parking page. DNS targets must come from the actual hosting account; preserve existing email records.
+- **WHC access and upload:** connect an authenticated WHC/cPanel session or another secure deployment channel for the assistant. The deployment ZIP belongs in the document root shown in cPanel → Domains → screeners.ca. Follow `docs/CPANEL_UPLOAD.md`. The last domain check returned WHC's registrar parking page. DNS targets must come from the actual hosting account; preserve existing email records.
 - **Production checks:** validate HTTPS/redirects, EN/FR deep links, responsive/browser and keyboard behaviour, server configuration and the enquiry route on the actual host. The managed environment has no supported browser-control tool; browser QA has not been performed.
 - **Operational maintenance:** keep the approved privacy/terms and French content aligned with actual enquiry handling and any future service changes.
 

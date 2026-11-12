@@ -5,7 +5,7 @@ Bilingual industrial screening equipment website for Canada, built from the appr
 
 The implementation is a **release candidate, not a verified production launch**. It contains 64 English/French pages, shared navigation and footer, original brand assets, equipment/service/application guidance, distinct Ontario/Quebec/BC planning pages, metadata, reciprocal hreflang, sitemap, 404 and a guided quote workflow.
 
-The owner approved the logo and release on November 12, 2026, and selected cPanel File Manager for upload. Follow [the cPanel upload steps](docs/CPANEL_UPLOAD.md) with the deployment ZIP. Live verification follows the upload.
+The owner approved the logo and release on November 12, 2026, and authorized the assistant to handle upload, domain connection and hosting configuration. Authenticated WHC access is pending. [The cPanel upload steps](docs/CPANEL_UPLOAD.md) document the procedure; live verification follows deployment.
 
 The owner confirmed `info@screeners.ca` as the ready enquiry mailbox. The default form prepares a reviewable email draft for the visitor to send; it does not claim to send from the website. An optional, guarded PHP transport is included and disabled pending live-host testing.
 

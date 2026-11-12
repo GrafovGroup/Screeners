@@ -1,6 +1,6 @@
 # Upload the approved SCREENERS.CA release
 
-The owner approved the logo and release on November 12, 2026, and chose cPanel File Manager for publishing. This procedure uses the deployment ZIP containing the built website.
+The owner approved the logo and release on November 12, 2026, and authorized the assistant to handle publication, domain connection and hosting. This procedure is the upload reference for the authenticated operator; the owner does not need to perform it manually.
 
 1. In **cPanel → Domains**, find **screeners.ca** and open its **Document Root**. Use that domain's exact folder; it may differ from the account's main `public_html` folder.
 2. Back up the current contents and `.htaccess` before replacing files. Keep the backup outside the public document root. Preserve any hosting-managed `.well-known` certificate-validation folder.
@@ -9,7 +9,7 @@ The owner approved the logo and release on November 12, 2026, and chose cPanel F
 5. Confirm that `index.html`, `.htaccess`, `en/`, `fr/`, `assets/`, `api/`, `sitemap.xml` and `robots.txt` sit directly in the domain's document root. Standard permissions are `755` for folders and `644` for files.
 6. Remove the uploaded ZIP from the public folder after extraction. Keep a local copy and its SHA-256 file for rollback.
 7. Confirm that cPanel **SSL/TLS Status** shows a valid certificate for `screeners.ca` before testing the public site. The supplied `.htaccess` redirects ordinary HTTP traffic to HTTPS and preserves the common WHC/AutoSSL validation paths.
-8. Open `https://screeners.ca/en/` and `https://screeners.ca/fr/`. Notify the assistant when extraction is finished so the public pages, language links, assets, HTTPS and redirects can be checked.
+8. Open `https://screeners.ca/en/` and `https://screeners.ca/fr/`. Verify the public pages, language links, assets, HTTPS and redirects after extraction.
 
 If the domain still displays WHC's parking page, confirm that it points to this hosting account using the account-specific DNS instructions from WHC. The ZIP upload alone does not change DNS. Preserve MX and mail-related TXT records.
 
