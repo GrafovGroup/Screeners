@@ -1,6 +1,6 @@
 # SCREENERS.CA brand system
 
-Status: proposed production refinement of the approved Modern Industrial #2 direction. The original S emblem, particle pattern and integrated wordmark are implemented as scalable SVG. Final visual signoff remains open; these files are reviewable candidates, not a record of approval.
+Status: approved by the owner on November 12, 2026, with “approved lets proceed” after reviewing the release and logo preview. The original S emblem, particle pattern and integrated SCREENERS.CA wordmark are the approved production identity.
 
 ## Identity
 

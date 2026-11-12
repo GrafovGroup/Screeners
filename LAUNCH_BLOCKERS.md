@@ -1,13 +1,12 @@
 # Launch status and remaining inputs
 
-This is a release candidate. It has not been uploaded to WHC or verified as live.
+The owner approved the logo and release on November 12, 2026, and chose to upload the deployment ZIP using cPanel File Manager. Upload and production verification are still pending.
 
 ## Needed to finish publication
 
-- **Hosting access:** the GitHub repository is connected, but the WHC/cPanel account, authenticated upload channel and exact `screeners.ca` document root have not been supplied. The domain currently serves WHC's registrar parking page. Obtain hosting-specific targets before any DNS changes; preserve existing email records.
-- **Logo signoff:** the selected S-with-screening-dots direction has been refined into SVG assets and a visual review sheet. The master brief requires presenting refinements for approval before treating them as final. Review `assets/brand/preview.html` or the supplied raster review sheet.
+- **cPanel upload:** the owner will upload the deployment ZIP to the document root shown in cPanel → Domains → screeners.ca. Follow `docs/CPANEL_UPLOAD.md`. The last domain check returned WHC's registrar parking page. DNS targets must come from the actual hosting account; preserve existing email records.
 - **Production checks:** validate HTTPS/redirects, EN/FR deep links, responsive/browser and keyboard behaviour, server configuration and the enquiry route on the actual host. The managed environment has no supported browser-control tool; browser QA has not been performed.
-- **Operational/legal review:** the operator must confirm the privacy notice, contracting identity and terms against actual enquiry handling. French content is complete; a final operator/native-language review remains appropriate before public launch.
+- **Operational maintenance:** keep the approved privacy/terms and French content aligned with actual enquiry handling and any future service changes.
 
 ## Quote workflow
 

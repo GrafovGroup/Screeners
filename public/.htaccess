@@ -4,6 +4,8 @@ ErrorDocument 404 /404.html
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
+# Allow WHC/AutoSSL certificate validation before HTTPS and hidden-file rules.
+RewriteRule ^\.well-known/(?:acme-challenge|pki-validation)/[A-Za-z0-9_-]+(?:\.txt)?$ - [L]
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://screeners.ca%{REQUEST_URI} [R=301,L]
 RewriteCond %{HTTP_HOST} ^www\.screeners\.ca$ [NC]
