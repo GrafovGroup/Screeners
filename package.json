@@ -1,0 +1,17 @@
+{
+  "name": "screeners-ca",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bilingual, static SCREENERS.CA website for WHC shared hosting",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check:syntax": "node scripts/syntax.mjs",
+    "package": "node scripts/package.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

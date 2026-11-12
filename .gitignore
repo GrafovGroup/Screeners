@@ -1,0 +1,9 @@
+dist/
+node_modules/
+work/
+.env
+.env.*
+!.env.example
+screeners-quote-config.php
+*.zip
+*.tar.gz

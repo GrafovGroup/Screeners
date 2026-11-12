@@ -1,0 +1,35 @@
+Options -Indexes -MultiViews
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+# Allow WHC/AutoSSL certificate validation before HTTPS and hidden-file rules.
+RewriteRule ^\.well-known/(?:acme-challenge|pki-validation)/[A-Za-z0-9_-]+(?:\.txt)?$ - [L]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://screeners.ca%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.screeners\.ca$ [NC]
+RewriteRule ^ https://screeners.ca%{REQUEST_URI} [R=301,L]
+RewriteRule ^$ /en/ [R=302,L]
+RewriteRule (^|/)\. - [F,L]
+</IfModule>
+
+<IfModule mod_mime.c>
+AddType application/javascript .js .mjs
+AddType image/svg+xml .svg
+AddType image/webp .webp
+</IfModule>
+
+<IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'self' mailto:; frame-ancestors 'self'; base-uri 'self'; object-src 'none'"
+<FilesMatch "\.(css|js|mjs)$">
+Header set Cache-Control "public, max-age=3600"
+</FilesMatch>
+<FilesMatch "\.(webp|png|svg)$">
+Header set Cache-Control "public, max-age=604800"
+</FilesMatch>
+</IfModule>

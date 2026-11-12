@@ -1,0 +1,24 @@
+name: Validate website
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  static-site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm run check:syntax
+      - run: npm test
+      - run: php -l public/api/quote.php
+      - run: npm run build
+      - run: npm run check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: screeners-ca-whc
+          path: dist/
+          include-hidden-files: true
