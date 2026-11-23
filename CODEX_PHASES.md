@@ -1,5 +1,7 @@
 # Codex phase prompts — SCREENERS.CA
 
+Every phase, including one run on its own, inherits the [project master prompt](CODEX_MASTER_PROMPT.md). Apply its E-E-A-T guidance when publishing or checking equipment specifications, project imagery, supplier status and location claims in either language.
+
 ## Prompt 0 — research
 Read CODEX_MASTER_PROMPT.md. Research the Canadian market, 8–12 competitors, relevant screening equipment categories and partner strategy. Produce RESEARCH.md with dated URLs, claim verification status, SEO opportunities and recommended initial priorities. Do not claim supplier relationships.
 
