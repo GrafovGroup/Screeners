@@ -46,6 +46,15 @@ Hero: original, high-quality industrial screening machinery scene with strong le
 Build EN/FR quote forms with fields: name, company, email, phone, province, city, inquiry type (buy/rent/parts/service/on-site), equipment type, material, throughput requirement (optional), project timeline, delivery location, description, consent checkbox. Validate client and server-side where possible; anti-spam honeypot; accessible error states; success confirmation; do not claim emails are delivered until integration tested. Configure endpoint via environment variable; never commit API keys. If Formspree or other provider not supplied, build a clearly documented integration placeholder and never silently drop submissions. Track CTA and form events only after privacy/consent review.
 
 ## Phase 4 — bilingual SEO/AEO
+
+**Editorial standard · Google E-E-A-T**
+
+Start with the decision the reader came to make. Where first-hand experience helps, use work the publisher can document and share. Identify the real author or reviewer where readers would expect it. Explain the method when it affects interpretation. Support consequential claims with the relevant original source and claim outside recognition only when readers can verify it.
+
+When comparing machines, name the model, feed material and test conditions. Describe throughput as measured only when a test record supports it. Distinguish manufacturer estimates, documented field observations and illustrative scenarios.
+
+During content review, trace a representative claim to its evidence. Qualify or omit unsupported statements in visible copy, translations and structured data. [Google Search Central](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) · [Universal master prompt](https://github.com/GrafovGroup/MasterPrompt/blob/main/MASTER_PROMPT.md).
+
 Unique page titles, descriptions, one H1 per page, semantically useful headings, FAQ content grounded in actual operations, descriptive image alt text, breadcrumb structured data where applicable, Organization and WebSite schema with only verified facts, valid canonical and reciprocal hreflang en-CA/fr-CA, localized routes, XML sitemap, robots.txt, OG images, and 404 page. No fabricated reviews, ratings, prices, inventory, addresses or service claims. City/province pages need genuine localized relevance and distinct information. Validate metadata and indexability. Plan Google Search Console and Bing Webmaster Tools submission; never claim submitted until actually done.
 
 ## Phase 5 — build quality and deployment
